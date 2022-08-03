@@ -1,1 +1,7 @@
-eval("console.log('some string')")
+const makeButton = (name) => {
+  const button = document.createElement("button");
+  button.innerText = name;
+  return button;
+};
+
+module.exports = makeButton;

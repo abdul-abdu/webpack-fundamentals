@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
-    "dev": "webpack development",
-    "prod": "webpack --env goal=local --env production",
+    "dev": "webpack-dev-server --env mode=development",
+    "prod": "webpack --mode production",
     "debugthis": "node --inspect --inspect-brk ./src/index.js",
     "prod:debug": "npm run debug -- --env.mode production",
-    "dev:debug": "npm run debug -- --env.mode development"
+    "dev:debug": "npm run debug -- --env.mode development",
+    "webpack-dev-server": "webpack-dev-server"
   },
   "keywords": [],
   "author": "Abdugaffor Abdurakhimov <abdugaffor.abdurakhimov@gmail.com>",
